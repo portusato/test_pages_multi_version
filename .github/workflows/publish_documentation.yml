@@ -32,3 +32,4 @@ jobs:
           git add docs/0.0.1
           git config user.name "${{ github.actor }}"
           git commit -m 'Update documentation from ${{ github.sha }}'
+          git push
