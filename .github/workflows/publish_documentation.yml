@@ -21,6 +21,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Modify a file in the documentation. This is equivalent to the process that would compile documentation
+        run: 'echo Added commit  ${{ env.GITHUB_SHA }} >> docs/0.0.1/index.md'
+
       - uses: EndBug/add-and-commit@v7 # You can change this to use a specific version.
         with:
           branch: documentation
