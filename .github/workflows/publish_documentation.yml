@@ -25,4 +25,4 @@ jobs:
         with:
           branch: documentation
           message: Push documentation for change ${{ env.GITHUB_SHA }}
-          add: documentation
+          add: docs
