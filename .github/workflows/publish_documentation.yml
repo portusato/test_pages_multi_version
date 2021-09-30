@@ -23,9 +23,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Modify a file in the documentation. This is equivalent to the process that would compile documentation
-        run: 'echo Added commit ${{ github.sha }} >> docs/0.0.1/index.md'
-
       - name: Commit docs folder to branch documentation
         run: |
           cp -r docs/0.0.1 temp_docs_0.0.1
