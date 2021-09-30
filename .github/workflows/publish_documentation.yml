@@ -26,9 +26,9 @@ jobs:
 
       - name: Commit docs folder to branch documentation
         run: |
-          cp -r docs/0.0.1 temp_docs/0.0.1
+          cp -r docs/0.0.1 temp_docs_0.0.1
           git checkout documentation
           rm -rf docs/0.0.1
-          mv temp_docs/0.0.1 docs/0.0.1
+          mv temp_docs_0.0.1 docs/0.0.1
           git add docs/0.0.1
           git commit -m 'Update documentation from ${{ github.sha }}'
