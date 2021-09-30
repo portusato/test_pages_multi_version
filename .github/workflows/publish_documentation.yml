@@ -30,4 +30,5 @@ jobs:
           rm -rf docs/0.0.1
           mv temp_docs_0.0.1 docs/0.0.1
           git add docs/0.0.1
+          git config user.name "${{ github.actor }}"
           git commit -m 'Update documentation from ${{ github.sha }}'
